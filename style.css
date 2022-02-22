@@ -1,11 +1,12 @@
 /* ------------------------------------RWD------------------------------------ */
 /* || GENERAL STYLES */
 html {
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   box-sizing: border-box;
 }
 
@@ -229,12 +230,7 @@ header {
   align-items: center;
   color: #000000;
   background-color: #f1f1f1;
-  transition: all 0.5s ease;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.service-box:hover {
-  transform: scale(1.05);
 }
 
 .text {
@@ -331,9 +327,10 @@ footer {
     align-items: center;
   }
   .offer > h1 {
-    width: 501px;
+    width: 100%;
     height: 42px;
     margin: 50px auto 50px 94px;
+    justify-content: flex-start;
   }
   .boxes {
     position: absolute;
@@ -405,6 +402,15 @@ footer {
     color: #000000;
     background-color: #ffffff;
   }
+
+  .service-box {
+    transition: all 0.5s ease;
+  }
+
+  .service-box:hover {
+    transform: scale(1.05);
+  }
+
   footer {
     height: 71px;
     flex-direction: row;
